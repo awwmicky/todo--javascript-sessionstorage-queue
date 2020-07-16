@@ -58,7 +58,8 @@ function Queue (
     getData () {
         if (data.length) return data;
         const getDB = sessionStorage.getItem(key);
-        data = JSON.parse(getDB).filter(Boolean) || [];
+        data = JSON.parse(getDB) || [];
+        if (data.length) data = data.filter(Boolean);
         tail = (data.length) ? data.length : 0;
         return data;
     },
