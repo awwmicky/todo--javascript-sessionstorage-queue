@@ -36,3 +36,13 @@
     text-decoration-color: rgba(0,0,0,0.45);
 }
 ```
+
+```json
+[
+    {
+        "id": 10,
+        "task": "do something",
+        "completed": false
+    }
+]
+```

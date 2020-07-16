@@ -25,14 +25,15 @@
     width: 100%;
     padding: 0.75em;
 }
-.create-btn {
+.submit-btn {
     font-size: 2rem;
     font-weight: bold;
     width: 45px;
 }
-.create-btn:hover {
-    background: gray;
-}
+.submit-btn:hover,
+.submit-btn:focus
+{ background: darkgray; }
+.submit-btn:active { background: silver; }
 /* .todo-list {} */
 .task-card {
     display: flex;
@@ -107,3 +108,18 @@
 .task-opts > button:not(:first-child) {
     margin-left: 0.5em;
 }
+
+/*  */
+
+.delete-ds {
+    background:darkgray;
+    color: white;
+    border-radius: 0.3rem;
+    display: block;
+    margin: 0 auto;
+    padding: 0.5em 1em;
+}
+.delete-ds:hover, 
+.delete-ds:focus
+{ background: gray; }
+.delete-ds:active { background: darkgray; }
