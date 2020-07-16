@@ -61,6 +61,7 @@ function Queue (
         data = JSON.parse(getDB) || [];
         if (data.length) data = data.filter(Boolean);
         tail = (data.length) ? data.length : 0;
+        // console.log(data)
         return data;
     },
 
