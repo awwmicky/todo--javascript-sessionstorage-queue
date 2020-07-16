@@ -28,9 +28,10 @@ function Queue (
         const item = data[head];
         delete data[head++];
         // data[head++] = null;
-        if (head === tail) { head = 0; tail = 0; }
+        // if (head === tail) { head = 0; tail = 0; }
         this.setData()
-        return [(head - 1),item];
+        // return [head ? (head - 1) : head,item];
+        return [0,item];
     },
 
     print () {
@@ -200,6 +201,7 @@ $todoList.addEventListener('click', (e) => {
 
 $deleteDS.addEventListener('click', (e) => {
     if (!($todoList.children.length)) return;
+    if (TodoDB.peek() === null) return;
     const [id,data] = TodoDB.dequeue();
     // console.log(id,data)
     const card = $todoList.children[id];
