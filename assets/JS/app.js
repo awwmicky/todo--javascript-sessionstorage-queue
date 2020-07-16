@@ -28,9 +28,8 @@ function Queue (
         const item = data[head];
         delete data[head++];
         // data[head++] = null;
-        // if (head === tail) { head = 0; tail = 0; }
+        if (head === tail) { head = 0; tail = 0; }
         this.setData()
-        // return [head ? (head - 1) : head,item];
         return [0,item];
     },
 
