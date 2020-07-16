@@ -1,0 +1,109 @@
+.container {
+    border: 2px solid black;
+    background: white;
+    border-radius: 1rem;
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5em;
+}
+.container > *:not(:last-child) {
+    margin-bottom: 1em;
+}
+.header {
+    text-align: center;
+}
+/* .todo-form {} */
+.todo-form > div {
+    border: 2px solid black;
+    border-radius: 1.5rem;
+    display: flex;
+    max-width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.task-inp {
+    width: 100%;
+    padding: 0.75em;
+}
+.create-btn {
+    font-size: 2rem;
+    font-weight: bold;
+    width: 45px;
+}
+.create-btn:hover {
+    background: gray;
+}
+/* .todo-list {} */
+.task-card {
+    display: flex;
+    flex-flow: row;
+}
+.task-card:not(:last-child) {
+    margin-bottom: 0.25em;
+}
+.task-check {
+    display: flex;
+}
+.task-check > * {
+    margin: auto 0;
+}
+.check-box { display: none; }
+.check-mark {
+    --check-size: 19px;
+    border: 1px solid gray;
+    background: lightgray;
+    font-weight: bolder;
+    border-radius: 0.25rem;
+    position: relative;
+    width: var(--check-size);
+    height: var(--check-size);
+}
+.check-mark:hover {
+    background: gray;
+}
+.check-box:checked + .check-mark::before {
+    content: "✓";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid white; */
+}
+.task-completed { 
+    text-decoration: line-through; 
+    text-decoration-color: rgba(0,0,0,0.45);
+}
+.task-title {
+    flex: 1 1 auto;    
+    display: flex;
+    align-items: center;
+    margin: 0 0.5em;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* text-decoration: line-through; */
+}
+.task-title > span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.task-opts { 
+    display: flex;
+}
+.task-opts > button {
+    --btn-size: 30px;
+    border: 1px solid silver;
+    border-radius: 50%;
+    font-weight: bold;
+    /* padding: 0.5em; */
+    width: var(--btn-size);
+    height: var(--btn-size);
+}
+.task-opts > button:hover {
+    border-color: gray;
+    background: gray;
+}
+.task-opts > button:not(:first-child) {
+    margin-left: 0.5em;
+}

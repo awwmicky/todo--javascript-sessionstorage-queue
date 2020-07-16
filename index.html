@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="keywords" content="HTML, CSS, JavaScript, Session Storage, Queue" />
+<meta name="description" content="To-Do App — JavaScript, Session Storage, Queue" />
+<meta name="author" content="Michael F Alvarez" />
+
+<title>To-Do App — JavaScript, Session Storage, Queue</title>
+
+<!-- Favicon -->
+<meta name="msapplication-TileColor" content="#000000" />
+<meta name="msapplication-TileImage" content="./assets/images/icons/favicon.png" />
+<link rel="icon" type="image/x-icon" href="./assets/images/icons/favicon.ico" />
+<link rel="apple-touch-icon" sizes="" href="./assets/images/icons/favicon.png" />
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="./assets/CSS/reset.css" />
+<link rel="stylesheet" type="text/css" href="./assets/CSS/style.css" />
+<link rel="stylesheet" type="text/css" href="./assets/CSS/test.css" />
+</head>
+
+<body>
+<div class="container">
+    <div class="header">
+        <h1>To-Do</h1>
+        <p>JavaScript - Session Storage - Queue</p>
+    </div>
+    <form name="todo_form" class="todo-form">
+        <div class="group">
+            <input 
+                type="text"
+                name="task_inp"
+                id="task-inp"
+                class="task-inp"
+                placeholder="Enter a Task"
+                autocomplete="off"
+                autofocus
+            />
+            <input 
+                type="submit" 
+                name="submit_btn" 
+                id="submit-btn"
+                class="submit-btn create-btn"
+                value="✢"
+            />
+        </div>
+    </form>
+    <section class="todo-list"></section>
+</div>
+<!-- JavaScript -->
+<script type="text/javascript" src="./assets/JS/app.js"></script>
+<noscript>Enable JS to Run App</noscript>
+</body>
+</html>

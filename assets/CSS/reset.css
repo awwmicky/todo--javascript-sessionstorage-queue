@@ -1,0 +1,117 @@
+/*  */ /* NOTE:  */ /* *: */ /* !: */ /* ?: */
+/*  */ /* TODO:  */ /* REVIEW:  */ /* FIXME:  */
+/*  */ /* SECTION:  */ /* STUB:  */ /* ANCHOR:  */
+
+
+
+*, *::before, *::after {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%; height: 100%;
+    font: 1rem sans-serif;
+}
+
+/*  */
+
+body {
+    background:#eee;
+    color: #333;
+    line-height: 1;
+    letter-spacing: .05em;
+    /* text-align: center; */
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main { flex: 1 1 auto; }
+
+.container-wrapper {
+    max-width: 650px;
+    /* max-width: 1080px; */
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*  */
+
+textarea { resize: none; }
+
+button * { pointer-events: none; }
+
+img { vertical-align: bottom; }
+
+ol, ul { list-style: none; }
+
+a:has(i) { letter-spacing: 0; }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote::before,
+blockquote::after,
+q::before, q::after
+{ 
+    content: ''; 
+    content: none; 
+}
+
+table {
+    border-collapse: collapse; 
+    table-layout: fixed;
+    border-spacing: 0;
+    width: 100%;
+}
+
+input,
+select,
+textarea,
+button,
+input[type="button"],
+input[type="submit"]
+{ 
+    font: inherit;
+	white-space: inherit;
+    letter-spacing: inherit;
+    display: inline-block;
+    border: none;
+}
+
+button,
+input[type="button"],
+input[type="submit"]
+{ cursor: pointer; }
+
+input[type="checkbox"],
+input[type="radio"] 
+{
+    cursor: pointer;
+    width: 1rem; height: 1rem;
+    vertical-align: bottom;
+    /* display: none; */
+}
+
+input:focus,
+button:focus,
+select:focus,
+textarea:focus
+{ outline: none; }
+
+noscript {
+    display: block;
+    margin: 1em 0;
+}
+
+/*  */
+
+[hidden] { display: none; }
+[disabled] { background: #000; }
